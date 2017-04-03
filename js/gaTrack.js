@@ -1,4 +1,8 @@
+__gaTracker( function() {
+	window.ga = __gaTracker;
+});
+
 document.addEventListener( 'wpcf7mailsent', function( event )
 {
-    ga('send', 'event', 'Contact Form', 'submit');
+	ga('send', 'event', 'contact-form', 'submit');
 }, false );
